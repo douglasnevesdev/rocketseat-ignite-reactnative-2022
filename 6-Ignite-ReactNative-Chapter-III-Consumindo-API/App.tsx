@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import {
   useFonts,
   Inter_400Regular,
@@ -12,6 +13,7 @@ import {
 
 import { Home } from './src/screens/Home';
 import AppLoading from 'expo-app-loading';
+import theme from './src/styles/theme';
 
 export default function App() {
   
@@ -27,6 +29,10 @@ export default function App() {
     return <AppLoading/>
   }
 
-  return <Home/>
+  return (
+  <ThemeProvider theme={theme}>
+     <Home/>
+  </ThemeProvider>
+  )
 }
 
