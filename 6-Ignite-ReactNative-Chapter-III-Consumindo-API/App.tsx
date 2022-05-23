@@ -16,7 +16,7 @@ import AppLoading from 'expo-app-loading';
 import theme from './src/styles/theme';
 
 export default function App() {
-  
+
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_500Medium,
