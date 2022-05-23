@@ -24,8 +24,10 @@ import {
  Period,
  Price,
  Accessorys,
- About
+ About,
+ Footer
 } from './styles';
+import { Button } from '../../components/Button';
 
 
 export function CarDetails(){
@@ -67,7 +69,17 @@ export function CarDetails(){
          <About>
            Este é um automovel espotivo. Surgiu do lendario touro de lide insultado na praça Real Maestranha. É um belissimo carro para quem gosta de acelerar.
          </About>
+
+         <About>
+           Este é um automovel espotivo. Surgiu do lendario touro de lide insultado na praça Real Maestranha. É um belissimo carro para quem gosta de acelerar.
+         </About>
+
+
        </Content>
+
+       <Footer>
+         <Button title='Confirmar'/>
+       </Footer>
 
      </Container>
   );
