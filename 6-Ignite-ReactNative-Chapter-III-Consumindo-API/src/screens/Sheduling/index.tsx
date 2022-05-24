@@ -10,9 +10,12 @@ import {
  RentalPeriod,
  DateInfo,
  DateTitle,
- DateValue
+ DateValue,
+ Content,
+ Footer
 } from './styles';
 import { StatusBar } from 'react-native';
+import { Button } from '../../components/Button';
 
 export function Sheduling(){
 
@@ -30,27 +33,27 @@ export function Sheduling(){
           </Title>
 
           <RentalPeriod>
-
             <DateInfo>
               <DateTitle>DE</DateTitle>
               <DateValue selected={false}></DateValue>
             </DateInfo>
-
             <ArrowSvg/>
-
-
             <DateInfo>
               <DateTitle>ATE</DateTitle>
               <DateValue selected={false}></DateValue>
             </DateInfo>
-
-
-
           </RentalPeriod>
 
-       
-
        </Header>
+
+        <Content>
+       
+        </Content>
+
+        <Footer>
+          <Button title="Confirmar"/>
+        </Footer>
+
      </Container>
   );
 }

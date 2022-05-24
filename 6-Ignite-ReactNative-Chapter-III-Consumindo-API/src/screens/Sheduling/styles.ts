@@ -14,17 +14,15 @@ export const Container = styled.View`
 export const Header = styled.View`
   width: 100%;
   height: 325px;
-
   background-color: ${({ theme }) => theme.colors.header} ;
-
-  justify-content: center ;
+  justify-content: center;
   padding: 25px;
   padding-top: ${getStatusBarHeight() + 30}px;
 `;
 
 export const Title = styled.Text`
-  color: ${({ theme }) => theme.colors.shape} ;
-  font-family:${({ theme }) => theme.fonts.secondary_600} ;
+  color: ${({ theme }) => theme.colors.shape};
+  font-family:${({ theme }) => theme.fonts.secondary_600};
   font-size: ${RFValue(34)}px;
   margin-top: 24px;
 `;
@@ -56,4 +54,19 @@ export const DateValue = styled.Text<DateValueProps>`
     border-bottom-color: ${theme.colors.text} ;
     padding-bottom: 5px;
   `};
+`;
+
+export const Content = styled.ScrollView.attrs({
+  contentContainerStyle: {
+    paddingBottom: 24
+  },
+  showsVerticalScrollIndicator: false
+})`
+
+`;
+
+
+export const Footer = styled.View`
+  padding: 24px;
+
 `;
